@@ -32,3 +32,14 @@ export default {
   }
 }
 </script>
+
+<style>
+  .player p{
+    margin-bottom: 0px;
+    color: #ffbe2c;
+  }
+
+ p span{
+      float: right;
+  }
+</style>

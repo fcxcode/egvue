@@ -1,19 +1,32 @@
 <template>
-  <div id="app">
+  <b-container fluid id="app">
 
-    <header class="header">
-      <img alt="Extreme Games logo" src="./assets/extreme-games-logo.png">
-    </header>
-    <nav>
-    </nav>
-    <aside>
-      <h3>Playerlist</h3>
-      <PlayerActivity/>
-    </aside>
+    <b-row class="header">
+      <b-col>
+        <img alt="Extreme Games logo" src="./assets/extreme-games-logo.png">          
+      </b-col>
+    </b-row>
+
+    <b-row class="nav">
+      <b-col>
+      </b-col>
+    </b-row>
+
+    <b-row>
+      <b-col class="aside" sm="2">
+        <h3>Playerlist</h3>
+        <PlayerActivity/>
+      </b-col>
+      <b-col class="section">
+        <h3>Chat</h3>
+      </b-col>
+    </b-row>
+
+
     <section></section>
     <footer></footer>
     <activities-charts/>
-  </div>
+  </b-container>
 </template>
 
 <script>
@@ -39,38 +52,28 @@ body{
   background: black;
 }
 
-p {
-  text-align: left;
-}
-
-p span{
-    float: right;
-}
-
-header{
+.header{
   height: 100px;
-  background: #000; 
+  text-align: center;
+  background: #222222;
 }
 
-header img{
+.header img{
   position: relative;
   top: 50%;
   transform: translateY(-50%);
 }
 
-
-
-aside{
-  width: 10%;
-  float: left;
+.aside{
+  padding: 20px 15px;
+  background: #121212;
 }
 
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.section{
+  padding: 20px 15px;
+}
+
+h3{
+  color: white;
 }
 </style>
