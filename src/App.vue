@@ -1,7 +1,17 @@
 <template>
   <div id="app">
+
+    <header class="header">
+      <img alt="Extreme Games logo" src="./assets/extreme-games-logo.png">
+    </header>
+
+    <nav>
+
+    </nav>
+
+    <section></section>
+    <footer></footer>
     <activities-charts title="Extreme Games"/>
-    <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
@@ -20,6 +30,11 @@ export default {
 </script>
 
 <style>
+header{
+  height: 100px;
+  background: #000;
+}
+
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
