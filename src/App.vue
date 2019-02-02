@@ -19,8 +19,10 @@
       </b-col>
       <b-col class="section">
         <h3>Chat</h3>
+        <ChatLog/>
       </b-col>
     </b-row>
+
 
 
     <section></section>
@@ -32,6 +34,7 @@
 <script>
 import PlayerActivity from "./components/PlayerActivity.vue";
 import ActivitiesCharts from "./components/ActivitiesCharts.vue";
+import ChatLog from "./components/ChatLog.vue";
 import Vue from 'vue'
 import BootstrapVue from 'bootstrap-vue'
 Vue.use(BootstrapVue);
@@ -42,7 +45,8 @@ export default {
   name: "app",
   components: {
     PlayerActivity,
-    ActivitiesCharts
+    ActivitiesCharts,
+    ChatLog
   }
 };
 </script>
