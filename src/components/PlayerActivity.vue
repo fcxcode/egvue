@@ -1,7 +1,6 @@
 <template>
-
   <div class="player-listing" v-if="users && users.length">
-    <div v-for="users of users" v-bind:key="users.name">
+    <div class="player" v-for="users of users" v-bind:key="users.name">
       <p>{{users.name}} <span>{{users.shipType}}</span></p>
     </div>
   </div>

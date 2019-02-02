@@ -4,14 +4,14 @@
     <header class="header">
       <img alt="Extreme Games logo" src="./assets/extreme-games-logo.png">
     </header>
-
     <nav>
-
     </nav>
-
+    <aside>
+      <h3>Playerlist</h3>
+      <PlayerActivity/>
+    </aside>
     <section></section>
     <footer></footer>
-    <PlayerActivity/>
     <activities-charts/>
   </div>
 </template>
@@ -30,15 +30,34 @@ export default {
 </script>
 
 <style>
+body{
+  background: black;
+}
+
+p {
+  text-align: left;
+}
+
+p span{
+    float: right;
+}
+
 header{
   height: 100px;
-  background: #000;
+  background: #000; 
 }
 
 header img{
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+}
+
+
+
+aside{
+  width: 10%;
+  float: left;
 }
 
 #app {
