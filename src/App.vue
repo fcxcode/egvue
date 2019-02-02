@@ -19,6 +19,11 @@
 <script>
 import PlayerActivity from "./components/PlayerActivity.vue";
 import ActivitiesCharts from "./components/ActivitiesCharts.vue";
+import Vue from 'vue'
+import BootstrapVue from 'bootstrap-vue'
+Vue.use(BootstrapVue);
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 export default {
   name: "app",
