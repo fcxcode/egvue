@@ -11,19 +11,19 @@
 
     <section></section>
     <footer></footer>
-    <activities-charts title="Extreme Games"/>
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <PlayerActivity/>
+    <activities-charts/>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import PlayerActivity from "./components/PlayerActivity.vue";
 import ActivitiesCharts from "./components/ActivitiesCharts.vue";
 
 export default {
   name: "app",
   components: {
-    HelloWorld,
+    PlayerActivity,
     ActivitiesCharts
   }
 };
@@ -33,6 +33,12 @@ export default {
 header{
   height: 100px;
   background: #000;
+}
+
+header img{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 #app {
